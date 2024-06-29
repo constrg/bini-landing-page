@@ -596,10 +596,6 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-\[20px\] {
   bottom: 20px;
 }
@@ -616,18 +612,9 @@ video {
   top: 20px;
 }
 
-.m-\[100px\] {
-  margin: 100px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mx-\[100px\] {
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 .mb-\[20px\] {
@@ -642,20 +629,12 @@ video {
   display: grid;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
 .h-full {
   height: 100%;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .w-\[150px\] {
@@ -710,10 +689,6 @@ video {
   align-items: center;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -751,12 +726,6 @@ video {
   background-image: url('/src/assets/img/bini-bg.png');
 }
 
-.from-pink-300 {
-  --tw-gradient-from: #f9a8d4 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 168 212 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-pink-300\/80 {
   --tw-gradient-from: rgb(249 168 212 / 0.8) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(249 168 212 / 0) var(--tw-gradient-to-position);
@@ -791,10 +760,6 @@ video {
   padding: 20px;
 }
 
-.pb-\[100px\] {
-  padding-bottom: 100px;
-}
-
 .pb-\[50px\] {
   padding-bottom: 50px;
 }
@@ -815,25 +780,25 @@ video {
   font-size: 16px;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-body {
-  cursor: url('./public/Cursor.png'), pointer;
+/* 
+html {
+    cursor: url('../src/assets/img/Cursor.png'), auto;
+} */
+
+*,
+*:before,
+*:after {
+  cursor: url(/src/assets/img/Cursor.png), default;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {

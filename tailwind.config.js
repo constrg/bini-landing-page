@@ -3,6 +3,9 @@ module.exports = {
   content: ["./*.{html, js}"],
   theme: {
     extend: {
+      cursor: {
+        default: 'url(/src/assets/img/Cursor.png), default',
+      },
       backgroundImage: {
         'landing-page-bg': "url('/src/assets/img/bini-bg.png')",
       },
